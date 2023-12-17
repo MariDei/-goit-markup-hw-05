@@ -403,7 +403,8 @@ footer .logo {
   letter-spacing: 0.02em;
 }
 
-.footer-caption {
+.footer-socials-caption,
+.footer-subscribe-caption {
   color: #fff;
   font-weight: 500;
   line-height: 1.5;
@@ -439,4 +440,51 @@ footer .logo {
 
 .footer-socials-icon {
   fill: #f4f4fd;
+}
+
+.container-footer-subscribe {
+  margin-left: 80px;
+}
+
+.footer_subscribe_form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer_subscribe_input {
+  width: 264px;
+  padding: 8px 0 8px 16px;
+  background-color: #2e2f42;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer_subscribe_input::placeholder {
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-subscribe-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  color: #fff;
+  background-color: #4d5ae5;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-subscribe-btn-icon {
+  fill: #fff;
 }
