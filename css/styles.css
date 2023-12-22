@@ -32,6 +32,15 @@ img {
   height: auto;
 }
 
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
 /* Common styles */
 .visually-hidden {
   position: absolute;
@@ -562,9 +571,12 @@ footer .logo {
   letter-spacing: 0.02em;
 }
 
+.modal-form {
+  margin-bottom: 8px;
+}
+
 .form-label {
   display: block;
-  margin-top: 8px;
   margin-bottom: 4px;
   color: #8e8f99;
   font-size: 12px;
@@ -613,7 +625,6 @@ footer .logo {
   width: 100%;
   min-height: 120px;
   padding: 8px 16px;
-  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   font-size: 12px;
   line-height: 1.17;
@@ -623,6 +634,10 @@ footer .logo {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.field-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .field-comment:focus {
@@ -646,6 +661,7 @@ footer .logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -654,13 +670,13 @@ footer .logo {
   fill: transparent;
 }
 
-input:checked + label > span {
+.checkbox:checked + .checkbox-text > .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.checkbox-text-span {
+.checkbox-link {
   color: #4d5ae5;
   font-size: 12px;
   line-height: 1.33;
@@ -675,6 +691,7 @@ input:checked + label > span {
   padding: 16px 32px;
   margin: auto;
   width: 169px;
+  height: 56px;
   color: #fff;
   background-color: #4d5ae5;
   text-align: center;
@@ -686,4 +703,9 @@ input:checked + label > span {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background-color: #404bbf;
 }
